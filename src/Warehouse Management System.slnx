@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="WarehouseManagementSystem.Application/WarehouseManagementSystem.Application.csproj" />
+  <Project Path="WarehouseManagementSystem.Domain/WarehouseManagementSystem.Domain.csproj" Id="94f83406-9098-4702-880f-69a5ecc59ea1" />
+  <Project Path="WarehouseManagementSystem.Infrastructure/WarehouseManagementSystem.Infrastructure.csproj" />
+  <Project Path="WarehouseManagementSystem.UI/WarehouseManagementSystem.UI.csproj" />
+</Solution>
