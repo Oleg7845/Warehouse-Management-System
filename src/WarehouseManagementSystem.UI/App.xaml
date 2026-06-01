@@ -1,0 +1,220 @@
+﻿<Application
+    x:Class="WarehouseManagementSystem.UI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:WarehouseManagementSystem.UI"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:initial_admin="clr-namespace:WarehouseManagementSystem.UI.Pages.Authentication.InitialAdminSetup"
+    xmlns:force_password_change="clr-namespace:WarehouseManagementSystem.UI.Pages.Authentication.ForcePasswordChange"
+    xmlns:login="clr-namespace:WarehouseManagementSystem.UI.Pages.Authentication.Login"
+    xmlns:shell="clr-namespace:WarehouseManagementSystem.UI.Pages.Shell"
+    xmlns:dashboard="clr-namespace:WarehouseManagementSystem.UI.Pages.Dashboard"
+    xmlns:product_create="clr-namespace:WarehouseManagementSystem.UI.Pages.Products.ProductCreate"
+    xmlns:product_list="clr-namespace:WarehouseManagementSystem.UI.Pages.Products.ProductList"
+    xmlns:product_view="clr-namespace:WarehouseManagementSystem.UI.Pages.Products.ProductView"
+    xmlns:users_create="clr-namespace:WarehouseManagementSystem.UI.Pages.Users.UserCreate"
+    xmlns:user_list="clr-namespace:WarehouseManagementSystem.UI.Pages.Users.UserList"
+    xmlns:user_view="clr-namespace:WarehouseManagementSystem.UI.Pages.Users.UserView"
+    xmlns:audit_log_list="clr-namespace:WarehouseManagementSystem.UI.Pages.AuditLogs.AuditLogList"
+    xmlns:audit_log_view="clr-namespace:WarehouseManagementSystem.UI.Pages.AuditLogs.AuditLogView"
+    xmlns:category_create="clr-namespace:WarehouseManagementSystem.UI.Pages.Categories.CategoryCreate"
+    xmlns:category_list="clr-namespace:WarehouseManagementSystem.UI.Pages.Categories.CategoryList"
+    xmlns:category_view="clr-namespace:WarehouseManagementSystem.UI.Pages.Categories.CategoryView"
+    xmlns:stock_operation_create="clr-namespace:WarehouseManagementSystem.UI.Pages.StockOperations.StockOperationCreate"
+    xmlns:stock_operation_list="clr-namespace:WarehouseManagementSystem.UI.Pages.StockOperations.StockOperationList"
+    xmlns:stock_operation_view="clr-namespace:WarehouseManagementSystem.UI.Pages.StockOperations.StockOperationView"
+    xmlns:supplier_create="clr-namespace:WarehouseManagementSystem.UI.Pages.Suppliers.SupplierCreate"
+    xmlns:supplier_list="clr-namespace:WarehouseManagementSystem.UI.Pages.Suppliers.SupplierList"
+    xmlns:supplier_view="clr-namespace:WarehouseManagementSystem.UI.Pages.Suppliers.SupplierView"
+    xmlns:support_list="clr-namespace:WarehouseManagementSystem.UI.Pages.SupportTickets.SupportTicketList"
+    xmlns:support_create="clr-namespace:WarehouseManagementSystem.UI.Pages.SupportTickets.SupportTicketCreate"
+    xmlns:support_view="clr-namespace:WarehouseManagementSystem.UI.Pages.SupportTickets.SupportTicketView"
+    xmlns:settings="clr-namespace:WarehouseManagementSystem.UI.Pages.Settings"
+    xmlns:support_center="clr-namespace:WarehouseManagementSystem.UI.Pages.SupportCenter"
+    xmlns:support_panel="clr-namespace:WarehouseManagementSystem.UI.Pages.SupportPanel">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <materialDesign:BundledTheme
+                    BaseTheme="Light"
+                    PrimaryColor="DeepPurple"
+                    SecondaryColor="Lime" />
+
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign3.Defaults.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            
+            <DataTemplate DataType="{x:Type initial_admin:InitialAdminSetupViewModel}">
+                <initial_admin:InitialAdminSetupView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type force_password_change:ForcePasswordChangeViewModel}">
+                <force_password_change:ForcePasswordChangeView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type login:LoginViewModel}">
+                <login:LoginView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type shell:ShellViewModel}">
+                <shell:ShellView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type dashboard:DashboardViewModel}">
+                <dashboard:DashboardView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type product_create:ProductCreateViewModel}">
+                <product_create:ProductCreateView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type product_list:ProductListViewModel}">
+                <product_list:ProductListView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type product_view:ProductViewModel}">
+                <product_view:ProductView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type users_create:UserCreateViewModel}">
+                <users_create:UserCreateView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type user_list:UserListViewModel}">
+                <user_list:UserListView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type user_view:UserViewModel}">
+                <user_view:UserView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type audit_log_list:AuditLogListViewModel}">
+                <audit_log_list:AuditLogListView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type audit_log_view:AuditLogViewModel}">
+                <audit_log_view:AuditLogView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type category_create:CategoryCreateViewModel}">
+                <category_create:CategoryCreateView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type category_list:CategoryListViewModel}">
+                <category_list:CategoryListView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type category_view:CategoryViewModel}">
+                <category_view:CategoryView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type stock_operation_create:StockOperationCreateViewModel}">
+                <stock_operation_create:StockOperationCreateView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type stock_operation_list:StockOperationListViewModel}">
+                <stock_operation_list:StockOperationListView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type stock_operation_view:StockOperationViewModel}">
+                <stock_operation_view:StockOperationView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type supplier_create:SupplierCreateViewModel}">
+                <supplier_create:SupplierCreateView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type supplier_list:SupplierListViewModel}">
+                <supplier_list:SupplierListView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type supplier_view:SupplierViewModel}">
+                <supplier_view:SupplierView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type support_list:SupportTicketListViewModel}">
+                <support_list:SupportTicketListView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type support_create:SupportTicketCreateViewModel}">
+                <support_create:SupportTicketCreateView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type support_view:SupportTicketViewModel}">
+                <support_view:SupportTicketView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type settings:SettingsViewModel}">
+                <settings:SettingsView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type support_center:SupportCenterViewModel}">
+                <support_center:SupportCenterView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type support_panel:SupportPanelViewModel}">
+                <support_panel:SupportPanelView />
+            </DataTemplate>
+
+            <SolidColorBrush x:Key="White" Color="#FFFFFF" />
+            <SolidColorBrush x:Key="Green" Color="#398D53" />
+            <SolidColorBrush x:Key="LightGreen" Color="#9EE2B1" />
+            <SolidColorBrush x:Key="Red" Color="#CF0008" />
+            <SolidColorBrush x:Key="LightRed" Color="#E5A0A5" />
+            <SolidColorBrush x:Key="Smoke" Color="#EAECF2" />
+            <SolidColorBrush x:Key="DarkSmoke" Color="#D2D4D8" />
+            <SolidColorBrush x:Key="Gray" Color="#505050" />
+            <SolidColorBrush x:Key="DarkGray" Color="#303030" />
+            <SolidColorBrush x:Key="LightGray" Color="#808695" />
+            <SolidColorBrush x:Key="Blue" Color="#1B66B3" />
+            <SolidColorBrush x:Key="Purple" Color="#9B7DE0" />
+            <SolidColorBrush x:Key="Orange" Color="#F95B1E" />
+            <SolidColorBrush x:Key="LightOrange" Color="#F7C0AD" />
+        
+            <Style x:Key="NoHoverButtonStyle" TargetType="Button">
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border
+                                x:Name="border" 
+                                Background="{TemplateBinding Background}" 
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                
+                                <ContentPresenter
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="IconButtonGridStyle" TargetType="Button">
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Cursor" Value="Hand"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border
+                                Background="{TemplateBinding Background}"
+                                Padding="4"
+                                CornerRadius="4">
+                                <ContentPresenter />
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="#1FFFFFFF"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

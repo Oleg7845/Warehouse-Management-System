@@ -1,0 +1,145 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\Icons\logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Icons\archive.png" />
+    <None Remove="Resources\Icons\arrow_back.png" />
+    <None Remove="Resources\Icons\arrow_forward.png" />
+    <None Remove="Resources\Icons\box_process.png" />
+    <None Remove="Resources\Icons\category.png" />
+    <None Remove="Resources\Icons\checked.png" />
+    <None Remove="Resources\Icons\checkmark.png" />
+    <None Remove="Resources\Icons\clear_filter.png" />
+    <None Remove="Resources\Icons\clipboard_settings.png" />
+    <None Remove="Resources\Icons\close.png" />
+    <None Remove="Resources\Icons\contract.png" />
+    <None Remove="Resources\Icons\copy.png" />
+    <None Remove="Resources\Icons\dashboard.png" />
+    <None Remove="Resources\Icons\disable.png" />
+    <None Remove="Resources\Icons\down.png" />
+    <None Remove="Resources\Icons\down_arrow.png" />
+    <None Remove="Resources\Icons\edit.png" />
+    <None Remove="Resources\Icons\email.png" />
+    <None Remove="Resources\Icons\enable.png" />
+    <None Remove="Resources\Icons\eye.png" />
+    <None Remove="Resources\Icons\eye_hidden.png" />
+    <None Remove="Resources\Icons\flag.png" />
+    <None Remove="Resources\Icons\login.png" />
+    <None Remove="Resources\Icons\logo-box.png" />
+    <None Remove="Resources\Icons\logo.png" />
+    <None Remove="Resources\Icons\logout.png" />
+    <None Remove="Resources\Icons\magnifer.png" />
+    <None Remove="Resources\Icons\next.png" />
+    <None Remove="Resources\Icons\padlock.png" />
+    <None Remove="Resources\Icons\padlock_open.png" />
+    <None Remove="Resources\Icons\paper_view.png" />
+    <None Remove="Resources\Icons\plus.png" />
+    <None Remove="Resources\Icons\prev.png" />
+    <None Remove="Resources\Icons\question.png" />
+    <None Remove="Resources\Icons\refresh.png" />
+    <None Remove="Resources\Icons\reply.png" />
+    <None Remove="Resources\Icons\save.png" />
+    <None Remove="Resources\Icons\settings.png" />
+    <None Remove="Resources\Icons\support.png" />
+    <None Remove="Resources\Icons\support_panel.png" />
+    <None Remove="Resources\Icons\tag.png" />
+    <None Remove="Resources\Icons\undo.png" />
+    <None Remove="Resources\Icons\unlock.png" />
+    <None Remove="Resources\Icons\up.png" />
+    <None Remove="Resources\Icons\up_arrow.png" />
+    <None Remove="Resources\Icons\user.png" />
+    <None Remove="Resources\Icons\users.png" />
+    <None Remove="Resources\Icons\user_block.png" />
+    <None Remove="Resources\Icons\user_check.png" />
+    <None Remove="Resources\Icons\user_plus.png" />
+    <None Remove="Resources\Icons\user_unblock.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Icons\logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="MaterialDesignInXamlToolkitAddOns" Version="0.0.63" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.142" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="2.1.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WarehouseManagementSystem.Application\WarehouseManagementSystem.Application.csproj" />
+    <ProjectReference Include="..\WarehouseManagementSystem.Infrastructure\WarehouseManagementSystem.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Icons\archive.png" />
+    <Resource Include="Resources\Icons\arrow_back.png" />
+    <Resource Include="Resources\Icons\arrow_forward.png" />
+    <Resource Include="Resources\Icons\category.png" />
+    <Resource Include="Resources\Icons\checked.png" />
+    <Resource Include="Resources\Icons\checkmark.png" />
+    <Resource Include="Resources\Icons\clear_filter.png" />
+    <Resource Include="Resources\Icons\close.png" />
+    <Resource Include="Resources\Icons\contract.png" />
+    <Resource Include="Resources\Icons\copy.png" />
+    <Resource Include="Resources\Icons\dashboard.png" />
+    <Resource Include="Resources\Icons\disable.png" />
+    <Resource Include="Resources\Icons\down.png" />
+    <Resource Include="Resources\Icons\down_arrow.png" />
+    <Resource Include="Resources\Icons\edit.png" />
+    <Resource Include="Resources\Icons\email.png" />
+    <Resource Include="Resources\Icons\enable.png" />
+    <Resource Include="Resources\Icons\eye.png" />
+    <Resource Include="Resources\Icons\eye_hidden.png" />
+    <Resource Include="Resources\Icons\flag.png" />
+    <Resource Include="Resources\Icons\login.png" />
+    <Resource Include="Resources\Icons\logo-box.png" />
+    <Resource Include="Resources\Icons\logo.png" />
+    <Resource Include="Resources\Icons\logout.png" />
+    <Resource Include="Resources\Icons\magnifer.png" />
+    <Resource Include="Resources\Icons\next.png" />
+    <Resource Include="Resources\Icons\padlock.png" />
+    <Resource Include="Resources\Icons\padlock_open.png" />
+    <Resource Include="Resources\Icons\paper_view.png" />
+    <Resource Include="Resources\Icons\plus.png" />
+    <Resource Include="Resources\Icons\prev.png" />
+    <Resource Include="Resources\Icons\question.png" />
+    <Resource Include="Resources\Icons\refresh.png" />
+    <Resource Include="Resources\Icons\reply.png" />
+    <Resource Include="Resources\Icons\save.png" />
+    <Resource Include="Resources\Icons\settings.png" />
+    <Resource Include="Resources\Icons\support.png" />
+    <Resource Include="Resources\Icons\support_panel.png" />
+    <Resource Include="Resources\Icons\tag.png" />
+    <Resource Include="Resources\Icons\undo.png" />
+    <Resource Include="Resources\Icons\up.png" />
+    <Resource Include="Resources\Icons\up_arrow.png" />
+    <Resource Include="Resources\Icons\user.png" />
+    <Resource Include="Resources\Icons\users.png" />
+    <Resource Include="Resources\Icons\user_check.png" />
+    <Resource Include="Resources\Icons\user_plus.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Pages\Shell\ShellView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\SupportTickets\SupportTicketCreate\SupportTicketCreateView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
